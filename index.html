@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- svg icon from /assets/transparent-logo.svg -->
+        <link rel="icon" type="image/svg+xml" href="./assets/transparent-logo.svg" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EXCEL HEALTHCARE CONSULTING SERVICES</title>
+        <!-- Load Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            /* Custom styles for the blue angled service section */
+            .service-bg-container {
+                /* The blue background color */
+                background-color: #1e3a8a; /* Dark Blue from the logo area */
+                color: white;
+                padding-top: 3rem; /* Extra top padding */
+                padding-bottom: 3rem; /* Extra bottom padding */
+                margin-top: -2rem; /* Pull up slightly into the main header area */
+
+                /* Apply the angled shape using clip-path (responsive fallback needed for older browsers, but good for modern) */
+                /* This clip-path creates a diagonal top edge: starts at top-left (0, 0), goes to 100% width at 2% height, then bottom-right (100, 100) and bottom-left (0, 100) */
+                clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
+            }
+
+            /* Set default font to Inter for better modern readability */
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: #f7f7f7;
+            }
+
+            /* Ensure smooth scrolling when clicking on anchor links (optional, but good practice) */
+            html {
+                scroll-behavior: smooth;
+            }
+
+            /* Styling for the small logo text */
+            .logo-text {
+                color: #1e3a8a;
+                font-size: 0.75rem; /* text-xs */
+                line-height: 1;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center">
+                <!-- Logo/Company Name -->
+                <div class="flex-shrink-0 flex align-center justify-center">
+                    <!-- Placeholder for the logo icon (e.g., handshake) -->
+                    <img class="w-24 h-24 pr-2" viewBox="0 0 24 24" src="./assets/transparent-logo.svg" fill="none" stroke="currentColor" />
+                    <div class="flex flex-col justify-center align-center">
+                        <span class="logo-text font-bold block">EXCEL HEALTHCARE</span>
+                        <span class="logo-text block">CONSULTING SERVICES</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+                <!-- Left Column: Titles and Services -->
+                <div class="mb-8 lg:mb-0">
+                    <!-- Large Title -->
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight mt-6">EXCEL HEALTHCARE <br />CONSULTING SERVICES</h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-xl md:text-2xl font-semibold text-gray-700 mt-6 mb-10">Ancillary Income Opportunities for Critical Access Hospitals – No Capital Outlay</p>
+
+                    <!-- Services Section (with custom angled background) -->
+                    <div class="service-bg-container rounded-lg shadow-xl p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-4">Our Services Include:</h2>
+
+                        <!-- Service List -->
+                        <div class="space-y-6">
+                            <!-- Service 1: HOPD Wound Care -->
+                            <div class="bg-white/10 p-4 rounded-md">
+                                <h3 class="font-bold text-xl mb-1">HOPD Wound Care Clinics</h3>
+                                <p class="text-sm">ECHS helps with all aspects of creating a wound care program specifically tailored to your critical access hospital, from policies, procedures, processes, opportunity assessment, staffing requirements, training and more.</p>
+                            </div>
+
+                            <!-- Service 2: Surgical Assists -->
+                            <div class="bg-white/10 p-4 rounded-md">
+                                <h3 class="font-bold text-xl mb-1">Free Surgical Assists/Advanced Practice Providers</h3>
+                                <p class="text-sm">Surgical First Assists/APPs can be provided at no cost to your hospital through an external party, or your current surgical assists/APP's can be leased by that third party to remove the need to subsidize their income.</p>
+                            </div>
+
+                            <!-- Service 3: Chronic Care Management -->
+                            <div class="bg-white/10 p-4 rounded-md">
+                                <h3 class="font-bold text-xl mb-1">Chronic Care Management and Remote Patient Monitoring</h3>
+                                <p class="text-sm">ECHS utilizes a unique, turn-key model of Chronic Care Management in which nurses or APPs are employed and placed by the CCM company in the clinics.</p>
+                            </div>
+
+                            <!-- Service 4: Personal Injury -->
+                            <div class="bg-white/10 p-4 rounded-md">
+                                <h3 class="font-bold text-xl mb-1">Personal Injury/Motor Vehicle Accident Opportunity</h3>
+                                <p class="text-sm">Stop leaking these patients from your hospital inpatient and ER departments. EHCS will provide case management to identify which patients will need to use their health insurance or a lien. We educate your staff on how to navigate these patients and the case manager will take over navigating their care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Images and Contact Info -->
+                <div class="space-y-8 mt-12 lg:mt-0">
+                    <!-- Image 1 (Medical Professional) -->
+                    <div class="rounded-lg shadow-xl overflow-hidden">
+                        <img src="./assets/doctor_single.png" alt="Placeholder image of a doctor consulting" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/9ca3af/ffffff?text=Image+Not+Found'" />
+                    </div>
+
+                    <!-- Image 2 (Team working) -->
+                    <div class="rounded-lg shadow-xl overflow-hidden">
+                        <img src="./assets/doctor_meeting.png" alt="Placeholder image of a healthcare team working together" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/9ca3af/ffffff?text=Image+Not+Found'" />
+                    </div>
+
+                    <!-- Contact Information Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-blue-800">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">More Info:</h2>
+                        <div class="space-y-2 text-gray-600">
+                            <p><span class="font-semibold text-gray-700">Name:</span> Joe Remes</p>
+                            <p><span class="font-semibold text-gray-700">Phone:</span> 435-300-0472</p>
+                            <p><span class="font-semibold text-gray-700">Email:</span> <a href="mailto:joe@excelhcs.com" class="text-blue-600 hover:underline">joe@excelhcs.com</a></p>
+                            <p><span class="font-semibold text-gray-700">Website:</span> <a href="http://www.excelhcs.com" target="_blank" class="text-blue-600 hover:underline">www.excelhcs.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer (simple) -->
+        <footer class="bg-gray-100 mt-10 py-6">
+            <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">© 2025 Excel Healthcare Consulting Services. All rights reserved.</div>
+        </footer>
+    </body>
+</html>
