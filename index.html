@@ -12,7 +12,7 @@
             /* Custom styles for the blue angled service section */
             .service-bg-container {
                 /* The blue background color */
-                background-color: #1e3a8a; /* Dark Blue from the logo area */
+                background-color: #1e4052; /* Dark Blue from the logo area */
                 color: white;
                 padding-top: 3rem; /* Extra top padding */
                 padding-bottom: 3rem; /* Extra bottom padding */
@@ -33,26 +33,31 @@
             html {
                 scroll-behavior: smooth;
             }
-
+            a {
+                color: #1e4052;
+            }
             /* Styling for the small logo text */
-            .logo-text {
-                color: #1e3a8a;
-                font-size: 0.75rem; /* text-xs */
+            a.logo-text {
+                color: #1e4052; /* text-xs */
                 line-height: 1;
+                /* font-size: 1.2rem;            } */
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #1e4052;
             }
         </style>
     </head>
     <body class="min-h-screen">
         <!-- Header Section -->
         <header class="bg-white shadow-md">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 flex items-center">
                 <!-- Logo/Company Name -->
                 <div class="flex-shrink-0 flex align-center justify-center">
                     <!-- Placeholder for the logo icon (e.g., handshake) -->
-                    <img class="w-24 h-24 pr-2" viewBox="0 0 24 24" src="./assets/transparent-logo.svg" fill="none" stroke="currentColor" />
+                    <img class="w-24 md:w-36 h-24 md:h-36 lg:w-48 lg:h-48 pr-2" src="./assets/transparent-logo.svg" />
                     <div class="flex flex-col justify-center align-center">
-                        <span class="logo-text font-bold block">EXCEL HEALTHCARE</span>
-                        <span class="logo-text block">CONSULTING SERVICES</span>
+                        <a class="text-md lg:text-xl ml-6 lg:ml-16 logo-text font-bold block" href="#contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +76,7 @@
 
                     <!-- Services Section (with custom angled background) -->
                     <div class="service-bg-container rounded-lg shadow-xl p-8 lg:p-10">
-                        <h2 class="text-2xl font-bold mb-4">Our Services Include:</h2>
+                        <h2 class="text-2xl font-bold mb-4 mt-4">Our Services Include:</h2>
 
                         <!-- Service List -->
                         <div class="space-y-6">
@@ -103,7 +108,7 @@
                 </div>
 
                 <!-- Right Column: Images and Contact Info -->
-                <div class="space-y-8 mt-12 lg:mt-0">
+                <div class="space-y-8 mt-12 max-w-xl mx-auto lg:max-w-7xl lg:mt-0">
                     <!-- Image 1 (Medical Professional) -->
                     <div class="rounded-lg shadow-xl overflow-hidden">
                         <img src="./assets/doctor_single.png" alt="Placeholder image of a doctor consulting" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/9ca3af/ffffff?text=Image+Not+Found'" />
@@ -115,13 +120,13 @@
                     </div>
 
                     <!-- Contact Information Card -->
-                    <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-blue-800">
+                    <div id="contact" class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-[#1e4052]">
                         <h2 class="text-2xl font-bold text-gray-800 mb-4">More Info:</h2>
                         <div class="space-y-2 text-gray-600">
                             <p><span class="font-semibold text-gray-700">Name:</span> Joe Remes</p>
-                            <p><span class="font-semibold text-gray-700">Phone:</span> 435-300-0472</p>
-                            <p><span class="font-semibold text-gray-700">Email:</span> <a href="mailto:joe@excelhcs.com" class="text-blue-600 hover:underline">joe@excelhcs.com</a></p>
-                            <p><span class="font-semibold text-gray-700">Website:</span> <a href="http://www.excelhcs.com" target="_blank" class="text-blue-600 hover:underline">www.excelhcs.com</a></p>
+                            <span class="font-semibold text-gray-700">Phone:</span> <a class="text-blue-700 underline" href="tel:4353000472">435-300-0472</a>
+                            <p><span class="font-semibold text-gray-700">Email:</span> <a href="mailto:joe@excelhcs.com" class="text-blue-700 underline">joe@excelhcs.com</a></p>
+                            <p><span class="font-semibold text-gray-700">Website:</span> <a href="http://www.excelhcs.com" target="_blank" class="text-blue-700 underline">www.excelhcs.com</a></p>
                         </div>
                     </div>
                 </div>
