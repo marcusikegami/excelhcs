@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- svg icon from /assets/transparent-logo.svg -->
+        <link rel="icon" type="image/svg+xml" href="./assets/transparent-logo.svg" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meet the Team | EXCEL HEALTHCARE CONSULTING SERVICES</title>
+        <!-- Load Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            /* Custom styles for the blue angled service section */
+            .service-bg-container {
+                /* The blue background color */
+                background-color: #1e4052; /* Dark Blue from the logo area */
+                color: white;
+                padding-top: 3rem; /* Extra top padding */
+                padding-bottom: 3rem; /* Extra bottom padding */
+                margin-top: -2rem; /* Pull up slightly into the main header area */
+
+                /* Apply the angled shape using clip-path (responsive fallback needed for older browsers, but good for modern) */
+                /* This clip-path creates a diagonal top edge: starts at top-left (0, 0), goes to 100% width at 2% height, then bottom-right (100, 100) and bottom-left (0, 100) */
+                clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
+            }
+
+            /* Set default font to Inter for better modern readability */
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: #f7f7f7;
+            }
+
+            /* Ensure smooth scrolling when clicking on anchor links (optional, but good practice) */
+            html {
+                scroll-behavior: smooth;
+            }
+            a {
+                color: #1e4052;
+            }
+            /* Styling for the small logo text */
+            a.logo-text {
+                color: #1e4052; /* text-xs */
+                line-height: 1;
+                /* font-size: 1.2rem;            } */
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #1e4052;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 flex items-center">
+                <!-- Logo/Company Name -->
+                <div class="flex-shrink-0 flex align-center justify-center">
+                    <!-- Placeholder for the logo icon (e.g., handshake) -->
+                    <a href="./index.html">
+                        <img class="w-24 md:w-36 h-24 md:h-36 lg:w-48 lg:h-48 pr-2" src="./assets/transparent-logo.svg" />
+                    </a>
+                    <div class="flex flex-col justify-center align-center">
+                        <a class="text-md lg:text-xl ml-6 lg:ml-16 logo-text font-bold block" href="./index.html">Home</a>
+                    </div>
+                    <div class="flex flex-col justify-center align-center">
+                        <a class="text-md lg:text-xl ml-6 lg:ml-16 logo-text font-bold block" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+                <!-- Left Column: Titles and Services -->
+                <div class="mb-8 lg:mb-0 lg:col-span-2">
+                    <!-- Large Title -->
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight mt-6">Meet the Team</h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-xl md:text-2xl font-semibold text-transparent mt-6 mb-10">Ancillary Income Opportunities for Critical Access Hospitals – No Capital Outlay</p>
+
+                    <!-- Services Section (with custom angled background) -->
+                    <div class="service-bg-container rounded-lg shadow-xl p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-4 mt-4"></h2>
+
+                        <!-- Service List -->
+                        <div class="space-y-6">
+                            <!-- Service 1: HOPD Wound Care -->
+                            <div class="bg-white/10 p-4 rounded-md lg:grid-cols-3">
+                                <div class="w-50 h-auto flex justify-center items-center col-span-1 mb-4">
+                                    <img class="w-full h-auto lg:w-1/3 lg:h-auto mb-4 lg:mb-0 object-contain rounded-lg" src="./assets/remes.jpg" alt="Joe Remes, Headshot, 2025" />
+                                </div>
+                                <div class="flex flex-col pl-4 col-span-2">
+                                    <h3 class="font-bold text-xl mb-1">Joe Remes</h3>
+                                    <p class="text-sm">Joe has been in the medical industry for over 35 years. His goal is to provide ancillary income opportunities to medical providers relating to endeavors to help patients and improve patient outcomes. Joe is a former hospital administrator, owner and has recently built numerous dialysis clinics, micro-hospitals, medical clinics, an urgent care and surgery centers in multiple states.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white/10 p-4 rounded-md lg:grid-cols-3">
+                                <div class="w-50 h-auto flex justify-center items-center col-span-1 mb-4">
+                                    <img class="w-full h-auto lg:w-1/3 lg:h-auto mb-4 lg:mb-0 object-contain rounded-lg" src="./assets/hannigan.jpeg" alt="Patrick J. Hannigan, Headshot, 2025" />
+                                </div>
+                                <div class="flex flex-col pl-4 col-span-2">
+                                    <h3 class="font-bold text-xl mb-1">Patrick J. Hannigan</h3>
+                                    <p class="text-sm">
+                                        Patrick J. Hannigan brings deep experience across the orthopedic and outpatient care landscape, with a career focused on developing ancillary programs that strengthen provider operations and improve patient outcomes. He began as an orthopedic OR sales specialist, supporting surgeons and enhancing procedural efficiency, before moving into DME consulting where he built turnkey ancillary solutions for outpatient facilities. He later founded a medical device distribution
+                                        company specializing in biologics and regenerative medicine, gaining extensive expertise in emerging technologies, commercialization, and clinical integration. Most recently, he serves as a managing partner of a GPO created for a large MSK group spanning interventional pain management, spine, and orthopedics, where he helps drive strategic vendor partnerships and maximize purchasing value. Across all roles, Patrick is committed to helping providers access meaningful
+                                        ancillary opportunities that enhance patient care and long-term practice performance.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-md lg:grid-cols-3">
+                                <div class="w-50 h-auto flex justify-center items-center col-span-1 mb-4">
+                                    <img class="w-full h-auto lg:w-1/3 lg:h-auto mb-4 lg:mb-0 object-contain rounded-lg" src="./assets/adames.jpg" alt="Molly Adames, Headshot, 2025" />
+                                </div>
+                                <div class="flex flex-col pl-4 col-span-2">
+                                    <h3 class="font-bold text-xl mb-1">Molly Adames</h3>
+                                    <p class="text-sm">
+                                        With 25 years in healthcare consulting, development, and finance, Molly Adames brings a depth of knowledge and a wide range of experience to her role with Excel Healthcare Consulting Services. She has held executive leadership roles in large management groups, start-up entities, and publicly traded organizations. In addition, Molly’s previous experience as a lawyer and small business owner gives her a hands-on approach and a practical perspective in bringing deals to
+                                        a successful close for all parties involved. Molly is currently a Senior Business Advisor and SVP of Development, for 4Fi, a fintech focused on healthcare and other specific investments. Over the years, Molly has earned a reputation as a well-respected and recognized leader in healthcare across the country, providing consulting services and much needed legal structure, focused not only on risk management and compliance, but also on creativity and innovation. Since
+                                        moving to Houston and starting her own consulting business in 2010, Molly has provided exceptional leadership and direction to clients from a variety of industries, sharing her expanded focus and insight. Her experience, business acumen, and ability to problem solve and think “outside the box” have allowed Molly’s clients to achieve success in business investment, acquisition, and de novo development. Earlier in her career, Molly was an established figure on Capitol
+                                        Hill, leading political advocacy efforts, fundraising, membership recruitment, and public relations, while operating a non-profit national trade association. She has also served as a board member and advisor for various business entities and public commissions, including three terms as a Governor appointed member of the SD Healthcare Commission. Molly received her Juris Doctorate with honours in 1997 from the USD School of Law, where she was awarded the prestigious
+                                        Gavel Award as the most promising graduate and served as the Editor in Chief of the Law Review. She and her husband have three children and enjoy life with family and friends around Houston, Texas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Images and Contact Info -->
+                <div class="space-y-8 mt-12 max-w-lg mx-auto lg:max-w-xl lg:mt-0 lg:col-span-1">
+                    <!-- Image 2 (Team working) -->
+                    <div class="rounded-lg shadow-xl overflow-hidden">
+                        <img src="./assets/doctor_meeting.png" alt="image of a healthcare team working together" class="w-full h-auto object-cover" />
+                    </div>
+                    <!-- Contact Information Card -->
+                    <div id="contact" class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-[#1e4052]">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">More Info:</h2>
+                        <div class="space-y-2 text-gray-600">
+                            <p><span class="font-semibold text-gray-700">Name:</span> Joe Remes</p>
+                            <span class="font-semibold text-gray-700">Phone:</span> <a class="text-blue-700 underline" href="tel:4353000472">435-300-0472</a>
+                            <p><span class="font-semibold text-gray-700">Email:</span> <a href="mailto:joe@excelhcs.com" class="text-blue-700 underline">joe@excelhcs.com</a></p>
+                            <p><span class="font-semibold text-gray-700">Website:</span> <a href="http://www.excelhcs.com" target="_blank" class="text-blue-700 underline">www.excelhcs.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer (simple) -->
+        <footer class="bg-gray-100 mt-10 py-6">
+            <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">© 2025 Excel Healthcare Consulting Services. All rights reserved.</div>
+        </footer>
+    </body>
+</html>
